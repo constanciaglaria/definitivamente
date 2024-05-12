@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
     <header>
@@ -24,27 +25,55 @@
     
     <form method="" action="">
         <div class="contenedor">
-        Nombre: <input type="text" name="Nombre">
-        Apellido: <input type="text" name="Apellido"><br>
-        <br>
-        e-mail: <input type="text" name="e-mail"<br>
-        <br><br>
-        <span>Sexo:</span><br><br>
-        <span>Masculino <input type="radio" name="Masculino"</span> <br>
-        <span> Femenino <input type="radio" name="Femenino"</span> <br>
-        <span> Otro <input type="radio" name="Otro"</span> <br>
-        <br>
-        Deja tu comentario <br>
-        <textarea cols="30" rows="8"></textarea> <br>
-        <br>
-        <input type="submit" value="enviar">
-        <input type="reset" value="cancelar">
+            <div class="row g-3">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                </div>
+                 <div class="row g-3">
+                    <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4">
+                      </div>
+              </div>
+              <div class="form-check">
+                <h4>Sexo</h4>
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                <label class="form-check-label" for="exampleRadios1">
+                  Femenino
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                <label class="form-check-label" for="exampleRadios2">
+                  Masculino
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                <label class="form-check-label" for="exampleRadios3">
+                  Otro
+                </label>
+              </div>
+              <div class="form-floating">
+                <h5>Deja tu consulta o comentario</h5><br>
 
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+              </div>
+              <div class="conteiner">
+                <div class="row">
+                    <div class="col-2">
+<input class="btn btn-primary" type="submit" value="Submit">
+<input class="btn btn-primary" type="reset" value="Reset">
+                </div>
+            </div>
     </div>
     </form>
     <footer>
         <p><i>Desarrollado por Coni Glaria</i></p>
     </footer>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> 
 </body>
 </html>
