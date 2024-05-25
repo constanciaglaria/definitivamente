@@ -8,58 +8,108 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
-    <header>
-        <div class="contenedor">
-            <div class="imagen1"><img src="imagen2.jpg" alt="logo-de-la-empresa" ></div>   
-        <h1 ><div class="titulo"><B>DEFINITIVAMENTE</B></div></h1>
-        <nav>
-            <ul>
-                <li>Inicio</li>
-                <li><a href="contacto.html" target="_blank">Contacto</a></li>
-                <li><a href="Promos.html" target="_blank">Promos</a></li>
-                <li>Preguntas Frecuentes</li>
-            </ul>
-        </nav>
+    <header><nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="imagen2.jpg" alt="Logo" width="150" height="120" class="d-inline-block align-text-center">
+                  DEFINITIVAMENTE
+              </a>
+            </div>
+          </nav>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html"target="_blank">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Promos.html" target="_blank">Promos</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="preguntas-frecuentes.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Preguntas Frecuentes
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="preguntas-frecuentes.html#¿Qué es la Depilación Definitiva?">¿Qué es la Depilación Definitiva?</a></li>
+                  <li><a class="dropdown-item" href="preguntas-frecuentes.html#¿Requiere de preparacion previa?">¿Requiere de preparacion previa?</a></li>
+                  <li><a class="dropdown-item" href="preguntas-frecuentes.html#Es un metodo seguro">¿Es un metodo seguro?</a></li>
+                  <li><a class="dropdown-item" href="preguntas-frecuentes.html#¿Cuantas sesiones son necesarias para obtener el resultado final?">¿Cuantas sesiones son necesarias para obtener el resultado final?</a></li>
+                </ul>
+             
+          </div>
         </div>
+      </nav>
     </header>
     <main>
-        <section>
-            <article>
-    <h1>DEFINITIVAMENTE</h1>
-    <H2>La depilación definitiva a tu alcance</H2>
-
-    <p>Definitivamente es un nuevo emprendimiento para que no pongas más excusas y te decidas a realizar la "depilación definitiva".</p>
-    <p1>Ahora a todos los beneficios de la depilación definitiva le podés sumar la comodidad de realizarla en tu hogar.¡Nunca fue tan fácil!</p1>
-             </article>
-         </section>
-         
-   
-   
-    <img src="depil.jpg"width="500px"height="250"alt="imagen de hermosas piernas luego de la depilación">
-    <section>
-        <article>
-            <h2>Pero te contamos un poco más...</h2>
-            <p>¿Cansada de rasurarte cada día? ¿Ya no quieres sentir la cera en tu piel una vez cada 15 o 30 días? ¿Quieres tener la piel suave y sin vello ante cualquier imprevisto? Ya puedes relajarte y sentirte más lista que nunca. Con nuestro tratamiento de depilación definitiva láser podrás brillar en todo momento.</p>
-
-              <p>  Tenemos la mejor tecnología para que tu tratamiento de depilación definitiva sea exitoso, con seguridad y con resultados de excelencia garantizados.</p>
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner"
+            style="height: 400px;">
+              <div class="carousel-item active">
+                <img src="./depil.jpg" class="d-block w-100" alt="..."
+                style="height: 450px;">
+                <div class="carousel-caption d-none d-md-block">
+                  <h3>Piel suave y tersa todo el año</h3>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./imagenes carrusel/equipos ultima generacion.jpg" class="d-block w-100" alt="..."
+                style="height: 400px;">
+                <div class="carousel-caption d-none d-md-block">
+                  <h3>Equipos de ultima generacion</h3>
+                  <p>Los mas efectivos y seguros del mercado</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./imagenes carrusel/descarga.jpg" class="d-block w-100" alt="..."
+                style="height: 400px;">
+                <div class="carousel-caption d-none d-md-block">
+                  <h3>Personal especializado</h3>
+                  <p>Siempre capacitandonos para darte el mejor servicio.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+       <section>
+        <article1>
+            <h1>DEFINITIVAMENTE</h1>
+                <h3>La depilación definitiva a tu alcance</h3>
+                <p>¿Cansada de rasurarte cada día? ¿Ya no quieres sentir la cera en tu piel una vez cada 15 o 30 días? ¿Quieres tener la piel suave y sin vello ante cualquier imprevisto? Ya puedes relajarte y sentirte más lista que nunca. Con nuestro tratamiento de depilación definitiva láser podrás brillar en todo momento.</p>                 
+        </article1>
+        <article2>
+           <h3>Pero te contamos un poco más acerca de nosotros...</h3>
+               <p><i><b>Definitivamente</b></i> es un nuevo emprendimiento para que no pongas más excusas y te decidas a realizar la "depilación definitiva".</p>
+               <p>  Tenemos la mejor tecnología para que tu tratamiento de depilación definitiva sea exitoso, con seguridad y con resultados de excelencia garantizados.</p>
                 
                <p> Síguenos en este camino para enterarte todo lo que necesitas saber:</p>
-               <h3>¿Qué es la Depilación Definitiva?</h3>
-               <p>Por supuesto sabes qué significa depilarte y que el objetivo es la eliminación del pelo, pero qué es la depilación láser? También conocida como depilación médica es un tipo de depilación basada en la aplicación de una luz específica (de láser o IPL) cuyo objetivo es la eliminación del pelo de forma permanente.</p>
-               
-               <p><i><b>Definitivamente</b></i> utiliza la máquina láser Soprano ice que es considerado el equipo más seguro y eficaz del mercado ya que calienta la zona de la piel que se está tratando de forma gradual hasta eliminar de forma completa la raíz del vello sin afectar la piel en su superficie y previniendo el recrecimiento del pelo.</p>
-               
-               <p>Una de las ventajas es que no se percibe el calor, por el contrario, los pacientes sienten la zona aliviada por el sistema de enfriamiento que permite refrescar la superficie de la piel mientras que mantiene el calor en la dermis donde están situados los folículos.</p>
-               
+               <h4>Nuestro objetivo: Brindar un servicio eficaz, confortable y seguro</h4>
+               <p>Utilizamos la máquina láser Soprano ice que es considerado el equipo más seguro y eficaz del mercado ya que calienta la zona de la piel que se está tratando de forma gradual hasta eliminar de forma completa la raíz del vello sin afectar la piel en su superficie y previniendo el recrecimiento del pelo.</p>               
+               <p>Una de las ventajas es que no se percibe el calor, por el contrario, los pacientes sienten la zona aliviada por el sistema de enfriamiento que permite refrescar la superficie de la piel mientras que mantiene el calor en la dermis donde están situados los folículos.</p>               
                <p>Este tipo de tratamiento comienza a mostrar sus resultados de forma más efectiva a partir del décimo día. ¿Quieres saber más? Sigue leyendo nuestro artículo y te enterarás de todos los detalles sobre cómo obtener una piel tersa y sin vello.</p>
-               
-              <h3> ¿Cómo es la depilación definitiva?</h3>
                <p>Para mantener la seguridad y la eficacia de este tratamiento es necesario que todo el procedimiento de depilación definitiva láser sea paulatino y bajo los protocolos correspondientes, desde luego que nuestro equipo esta formado por profesionales que tienen la experiencia y el conocimiento que se necesita para completar cada una de las sesiones de la manera más adecuada y segura para nuestros clientes.</p>
-               
-               <p>Al ser un tratamiento de depilación por etapas, la depilación láser se divide en sesiones que se realizan cada 1 o 2 meses, dependiendo de la zona que se está tratando. El éxito y la finalización de la depilación se alcanzan cuando se elimina de forma permanente entre el 85 y el 95% de los vellos una vez que se finaliza con el total de las sesiones.</p>
-               
-               
-        </article>
+              <h4>Un servicio diferente</h4>            
+               <p1>Ahora a todos los beneficios de la depilación definitiva le podés sumar la comodidad de realizarla en tu hogar.¡Nunca fue tan fácil!</p1>
+               <p>Encontra mas informacion en la seccion promos, y no dudes en consultar.</p>
+        </article2>
     </section>
     </main>
 
@@ -72,5 +122,7 @@
     <p><div class="autor"><i>Desarrollado por Coni Glaria</i></div></p>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<script src="./javasc.js"></script>
 </body>
 </html>

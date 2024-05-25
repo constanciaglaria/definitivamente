@@ -1,12 +1,10 @@
 header{
-    background-color: aqua;
+    background-color: rgb(98, 168, 168);
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
     color: rgb(121, 99, 99);
-    height: 230px;
-    margin-top: 20px;
-
+    margin-top: 0px;
     .imagen1 {
         text-align: left;
         width: 30%;
@@ -15,26 +13,22 @@ header{
         margin: 10px;
         position: absolute;
     }
-    
-}
-h1{
-    font-size: 50px;
-}
-.titulo{
-         background-color: antiquewhite;
-         text-align: center;
-    
-         
+    .navbar-brand{
+        font-size: 30px;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: rgb(93, 156, 156);
+    }   
 }
 ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between ;
     justify-content: space-around;
-    margin: 130px;
-    margin-left: 300px;
-    border: violet 10px solid;
-    font-weight: 400;
+    margin: 50px;
+    margin-left: 50px;
+    border: rgb(163, 114, 163) 10px solid;
+    font-weight: 300;
+    border-radius: 5px;
 }
 
 li {
@@ -56,7 +50,7 @@ form {
     padding: 10px;
 }
 footer{
-    background-color: aqua;
+    background-color: rgb(98, 168, 168);
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
