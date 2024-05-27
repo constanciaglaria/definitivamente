@@ -5,41 +5,135 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
-    <header>
-        <div class="contenedor">
-            <div class="imagen1"><img src="imagen2.jpg" alt="logo-de-la-empresa" ></div>
-           
-        <h1 ><B>DEFINITIVAMENTE</B></h1>
-        <nav>
-            <ul>
-                <li>Inicio</li>
-                <li><a href="contacto.html" target="_blank">Contacto</a></li>
-                <li><a href="Promos.html" target="_blank">Promos</a></li>
-                <li>Preguntas Frecuentes</li>
-            </ul>
-        </nav>
+    <header><nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="imagen2.jpg" alt="Logo" width="150" height="120" class="d-inline-block align-text-center">
+                  DEFINITIVAMENTE
+              </a>
+            </div>
+          </nav>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html"target="_blank">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Promos.html" target="_blank">Promos</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="preguntas-frecuentes.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Preguntas Frecuentes
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="preguntas-frecuentes.html#¿Qué es la Depilación Definitiva?">¿Qué es la Depilación Definitiva?</a></li>
+                  <li><a class="dropdown-item" href="preguntas-frecuentes.html#¿Requiere de preparacion previa?">¿Requiere de preparacion previa?</a></li>
+                  <li><a class="dropdown-item" href="preguntas-frecuentes.html#Es un metodo seguro">¿Es un metodo seguro?</a></li>
+                  <li><a class="dropdown-item" href="preguntas-frecuentes.html#¿Cuantas sesiones son necesarias para obtener el resultado final?">¿Cuantas sesiones son necesarias para obtener el resultado final?</a></li>
+                </ul>
+             
+          </div>
+        </div>
+      </nav>
     </header>
-    <table border="1" bgcolor="pink">
-    <caption><b>Promos</b</caption>
+    <main>
+   <table border="2">
+   
     <tr>
-        <td class="combos" style="color: rgb(120, 35, 128); font-size: 25px; font-weight: bold;"> Combo 1</td>
-        <td style="color: rgb(120, 35, 128);"font-style: oblique;">Axilas + Cavado</td>
-        <td rowspan="3">10% de descuento pago al contado</td>
+      <th class="encabezado" colspan="3">Zonas a tratar</th>
+    </tr>
+      <tr>
+      <td  class="zona">Cavado</td>
+      <td class="icono"><img src="./imagenes carrusel/cavado recort.jpg" alt="" width="60px" height="60px"></td>
+      <td class="precio">$2000</td>
+    </tr>
+    <tr>
+      <td class="zona">Axilas</td>
+      <td class="icono"><img src="./imagenes carrusel/axila recort.jpg" alt="" width="60px" height="60px"></td>
+      <td class="precio">$2500</td>
+    </tr>
+    <tr>
+      <td class="zona">Media pierna</td>
+      <td class="icono"><img src="./imagenes carrusel/media pierna recort.jpg" alt=""width="60px" height="60px"></td>
+      <td class="precio">$4000</td>
+    </tr>
+    <tr>
+      <td class="zona">Muslo</td>
+      <td class="icono"><img src="./imagenes carrusel/muslo recort.jpg" alt=""width="60px" height="60px"></td>
+      <td class="precio">$6000</td>
+    </tr>
+<tr>
+  <td class="zona">Antebrazo</td>
+  <td class="icono"><img src="./imagenes carrusel/antebrazo recort.jpg" alt=""width="60px" height="60px"></td>
+  <td class="precio">$4000</td>
+</tr>
+   </table>
+
+
+
+
+  <table border="2" >
+      <tr>
+        <th class="encabezado" colspan="4">Promos</th>
+      </tr>  
+    <tr>
+        <td class="combo">Combo 1</td>
+        <td class="zona">Axilas + Cavado</td>
+        <td class="descuento">10% de descuento</td>
+        <td class="adicional" rowspan="4">10% de descuento adicional pago al contado</td>
     </tr>  
     <tr>
-        <td class="combos" style="color: green; font-size: 25px; font-weight: bold;">Combo 2</td>
-        <td style="color: green;"font-style: oblique;">Axilas + Cavado + Media pierna</td>
-    </tr>
+      
+      <td class="combo">Combo 2</td>
+      <td class="zona">Axilas + Cavado + media pierna</td>
+      <td class="descuento">15% de descuento</td>
     <tr>
-        <td class="combos" style="color: #025; font-size: 25px; font-weight: bold;">Combo 3</td>
-        <td style="color: #025;"font-style: oblique;">Axilas + Cavado + Pierna entera</td>
+    <tr>
+      
+        <td class="combo">Combo 3</td>
+        <td class="zona">Cavado + media pierna + muslo</td>
+        <td class="descuento">20% de descuento</td>
     </tr>
     </table>
-    <footer>
-        <p><i>Desarrollado por Coni Glaria</i></p>
-    </footer>
+    <section>
+      <article>
+        <h2>Servicio Diferente</h2>
+        <p>Tenemos un servicio diferente y novedoso, que deberías probar:<br>
+          ¡Servicio a domicilio!<br>
+          Este servicio tiene como condición un mínimo de 3 clientes por sesión y sólo debes contar con un espacio privado para que todos se sientan cómodos, mientras las demás conversan, toman un refrigerio o hacen lo prefieran...<br>
+        </p>
+        <h4>Costo del servicio</h4>
+        <p>El costo depende de tu ubicación, es sin cargo en la zona centro de la ciudad de San Nicolás y tiene un recargo para zonas más alejadas, consultá aqui cual sería el costo según tu ubicación, ¡o no dudes en consultar a través del formulario de contacto!</p>
+        <a class="btn btn-primary" href="./costo domicilio.html" target="_blank" role="button">consulta el costo del servicio</a>
+
+
+      </article>    
+    </section>
     
+  </main>
+    <footer>
+        <div class="contenedor"></div>
+        <p><div class="autor"><i>Desarrollado por Coni Glaria</i></div></p>
+        <div class="wst"><button id="whatsappButton" class="whatsapp-btn">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo" class="whatsapp-logo">
+          Contactar por WhatsApp
+          </button></div>
+        <div class="ig"><a href="https://www.instagram.com/definitivamentee.sn" target="_blank">
+        <img src="./insta.jpg" alt="Sígueme en Instagram">
+      </a></div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./javasc.js"></script>
 </body>
 </html>
